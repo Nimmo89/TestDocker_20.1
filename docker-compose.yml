@@ -4,7 +4,7 @@ services:
  postgresql:
   image: postgres
   ports:
-   - '9999:3306'
+   - '9999:9999'
   volumes:
    - ./data:/var/lib/postgres
   environment:
