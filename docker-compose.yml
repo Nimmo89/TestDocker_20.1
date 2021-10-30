@@ -1,15 +1,13 @@
-version: '2'
+version: '3.7'
 
 services:
   postgresql:
-    image: docker.io/bitnami/postgresql:11
+    image: postgres
     ports:
       - '3306:3306'
     volumes:
-      - 'postgresql_data:/bitnami/postgresql'
-    environment:
-      - 'ALLOW_EMPTY_PASSWORD=yes'
-
-volumes:
-  postgresql_data:
-    driver: local
+      - ./data:/var/lib/postgres
+environment:
+	postgres_database: app
+	postgres_user: app
+	postgres_password: 12345	
