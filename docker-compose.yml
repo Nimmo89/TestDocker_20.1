@@ -8,6 +8,9 @@ services:
     volumes:
       - ./data:/var/lib/postgres
 environment:
-	postgres_database: app
-	postgres_user: app
-	postgres_password: 12345	
+	mysql_database: app
+	mysql_user: app
+	mysql_password: 12345
+	# postgres_database: app
+	# postgres_user: app
+	# postgres_password: 12345
