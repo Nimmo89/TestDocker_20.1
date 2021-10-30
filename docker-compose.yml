@@ -11,6 +11,3 @@ services:
 			MYSQL_database: app
 			MYSQL_user: app
 			MYSQL_password: 12345
-	# postgres_database: app
-	# postgres_user: app
-	# postgres_password: 12345
