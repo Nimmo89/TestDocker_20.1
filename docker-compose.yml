@@ -1,13 +1,13 @@
 version: '3.7'
 
 services:
- mysql:
-  image: mysql
+ postgresql:
+  image: postgres
   ports:
-   - '9999:9999'
+   - '9999:5432'
   volumes:
-   - ./data:/var/lib/mysql
+   - ./data:/var/lib/postgres
   environment:
-   MYSQL_database: app
-   MYSQL_user: app
-   MYSQL_password: 12345
+   postgresql_database: app
+   postgresql_user: app
+   postgresql_password: 12345
