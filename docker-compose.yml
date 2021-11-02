@@ -8,6 +8,6 @@ services:
   volumes:
    - ./data:/var/lib/postgres
   environment:
-   postgresql_database: app
-   postgresql_user: app
-   postgresql_password: 12345
+   POSTGRESQL_DATABASE: app
+   POSTGRESQL_USER: app
+   POSTGRESQL_PASSWORD: 12345
